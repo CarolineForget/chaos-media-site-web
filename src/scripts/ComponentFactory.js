@@ -2,7 +2,6 @@ import Carousel from './components/Carousel';
 import Header from './components/Header';
 import Scrolly from './components/Scrolly';
 import Video from './components/Video';
-import Form from './components/Form';
 import Snackbar from './components/Snackbar';
 import Modal from './components/Modal';
 
@@ -14,7 +13,6 @@ export default class ComponentFactory {
       Header,
       Scrolly,
       Video,
-      Form,
       Snackbar,
       Modal, //
     };

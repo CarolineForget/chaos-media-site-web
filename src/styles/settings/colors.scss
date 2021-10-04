@@ -3,7 +3,20 @@
    ========================================================================== */
 
 :root {
-    // Couleur de base
+  // Couleur de base
+  --color-white: #fff;
+  --color-black: #2E2E2E;
 
-    // Couleurs du projet
+  // Couleurs du projet
+  --color-primary: #A3D848;
+  --color-secondary: #FF4744;
+
+
+
+
+  --color-gradient-black-up: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0)
+  );
 }

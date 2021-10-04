@@ -1,0 +1,18 @@
+.btn {
+    color: var(--color-black);
+    border: solid 2px var(--color-black);
+    border-radius: 5px;
+    &:hover {
+        background-color: var(--color-white);
+        color: var(--color-primary);
+        border-color:var(--color-primary);
+    }
+}
+
+.btn__petit {
+    padding: 10px 30px;
+}
+
+.btn__grand {
+    padding: 20px 60px;
+}

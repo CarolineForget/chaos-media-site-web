@@ -1,4 +1,5 @@
 //FONTS
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Titan+One&display=swap');
 
 // TOOLS
 // mixins et fonctions utilisés globalement dans le SCSS (Sass)
@@ -32,6 +33,10 @@
 @import '../../node_modules/swiper/components/scrollbar/scrollbar.scss'; */
 
 @import 'components/icons';
+@import 'components/header.scss';
+@import 'components/boutons.scss';
+
+
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
