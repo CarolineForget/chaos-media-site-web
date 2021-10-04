@@ -2,6 +2,8 @@
     color: var(--color-black);
     border: solid 2px var(--color-black);
     border-radius: 5px;
+    display: inline-block;
+
     &:hover {
         background-color: var(--color-white);
         color: var(--color-primary);
@@ -10,7 +12,10 @@
 }
 
 .btn__petit {
-    padding: 10px 30px;
+    padding: 10px  20px ;
+    @media screen and (min-width: $breakpoint-md) {
+        padding:0  10px ;
+    }
 }
 
 .btn__grand {

@@ -6,8 +6,11 @@
     --font-primary: 'Baloo 2', sans-serif;
     --font-secondary: 'Titan One', sans-serif;
 
-    --font-size-content-desktop: 1.875rem;
-    --font-size-content-mobile: 1.25rem;
+
+    --font-size-content: 1.25rem;
+    @media screen and (min-width: $breakpoint-md) {
+        --font-size-content: 1.875rem;
+    }
     --font-size-comment: 1rem;
 
     --font-size-button: 1.5625rem;

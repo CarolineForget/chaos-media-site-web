@@ -5,10 +5,11 @@
 
 a {
     color: inherit;
+    font-weight: 600 ;
     text-decoration: none;
 
     &:hover {
-        color: black;
+        color: var(--color-primary);
     }
 
     &:active {
