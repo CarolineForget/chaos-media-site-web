@@ -1,8 +1,5 @@
 header {
-    --header-height: 65px;
     background: var(--color-white);
-    padding: 20px 0;
-    height: var(--header-height);
     position: sticky;
     top: 0;
     left: 0;
@@ -14,6 +11,7 @@ header {
     display: flex;
     align-items: center;
  
+    padding: 15px 0;
 
     .header__brand {
         img {
@@ -36,7 +34,6 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 50px ;
     }
 }
 
