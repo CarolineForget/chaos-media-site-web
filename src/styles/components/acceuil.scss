@@ -1,0 +1,32 @@
+.hero{
+    width: 100%;
+
+    height: 500px;
+    margin-top: 50px;
+
+    background-image: url('../../assets/images/hero_accueil.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .content_hero{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        img{
+          margin-top: 50px;  
+        }
+        
+    }
+    .hero_texte{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 75px;
+        a{
+            margin-top: 25px;
+        }
+    }
+}
