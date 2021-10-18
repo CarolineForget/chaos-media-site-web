@@ -20,15 +20,16 @@
 
     
     /// Grosseur des textes
-    --font-size-h1-desktop: 6.25rem;
-    --font-size-h1-mobile: 2.5rem;
 
-    --font-size-h2-desktop: 4.375rem;
-    --font-size-h2-mobile: 2.5rem;
+    --font-size-h1: 2rem;
+    --font-size-h2: 2.5rem;
+    --font-size-h3: 1.6875rem;
+    --font-size-h4: 1rem;
 
-    --font-size-h3-desktop: 2.5rem;
-    --font-size-h3-mobile: 1.6875rem;
-
-    --font-size-h4-desktop: 1.5625rem;
-    --font-size-h4-mobile: 1rem;
+    @media screen and (min-width:$breakpoint-md){
+        --font-size-h1: 3.5rem;
+        --font-size-h2: 4.375rem;
+        --font-size-h3: 2.5rem;
+        --font-size-h4: 1.5625rem;
+    }
 }
