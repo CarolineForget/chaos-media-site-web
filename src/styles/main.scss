@@ -12,7 +12,6 @@
 @import 'settings/easing';
 @import 'settings/fonts';
 
-
 // GENERIC
 // Permet de réinitialiser les CSS et de changer le modèle de boîte en box-sizing: border-box
 @import 'generic/normalize';
@@ -32,14 +31,10 @@
 /* @import '../../node_modules/swiper/swiper.scss';
 @import '../../node_modules/swiper/components/pagination/pagination.scss';
 @import '../../node_modules/swiper/components/scrollbar/scrollbar.scss'; */
-
 @import 'components/icons';
 @import 'components/header.scss';
 @import 'components/boutons.scss';
 @import 'components/acceuil.scss';
-
-
-
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page

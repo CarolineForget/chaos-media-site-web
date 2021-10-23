@@ -1,34 +1,32 @@
-.hero{
+.hero {
     width: 100%;
     height: 100%;
 
-   
     background-image: url('../../assets/images/hero_accueil.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom left;
     background-color: rgba($color: #fff, $alpha: 0.2);
 
-    .content_hero{
+    .content_hero {
         display: flex;
         flex-direction: column;
-        justify-content:flex-start;
+        justify-content: flex-start;
         align-items: center;
 
-        img{
-          margin-top: 50px;  
+        img {
+            margin-top: 50px;
         }
 
-        @media screen and (min-width:$breakpoint-sm) {
+        @media screen and (min-width: $breakpoint-sm) {
             flex-direction: row;
-            img{
+            img {
                 order: 1;
                 width: 60%;
             }
         }
-        
     }
-    .hero_texte{
+    .hero_texte {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -36,63 +34,200 @@
 
         text-align: center;
         padding-top: 50px;
-        a{
+        a {
             margin-top: 25px;
         }
-        h1{
+        h1 {
             color: var(--color-tiersary);
         }
 
-        @media screen and (min-width:$breakpoint-sm){
+        @media screen and (min-width: $breakpoint-sm) {
             width: 40%;
         }
     }
 }
 
-.video{
+.video {
     padding-top: 100px;
-    img{
-      border-radius: 15px;  
-      filter: drop-shadow(0px 20px 25px rgba(0, 0, 0, 0.4));
+    img {
+        border-radius: 15px;
+        filter: drop-shadow(0px 20px 25px rgba(0, 0, 0, 0.4));
     }
 }
 
-.description{
-    background: linear-gradient(180deg, rgba(91, 182, 202, 0.75) 2.38%, rgba(106, 202, 91, 0.75) 65.39%, rgba(90, 73, 12, 0.75) 105.17%), radial-gradient(367.46% 178.71% at 50% -13.24%, #4FBBDC 18.37%, #39AD5D 48.46%);
+.description {
+    background: linear-gradient(
+            180deg,
+            rgba(91, 182, 202, 0.75) 2.38%,
+            rgba(106, 202, 91, 0.75) 65.39%,
+            rgba(90, 73, 12, 0.75) 105.17%
+        ),
+        radial-gradient(
+            367.46% 178.71% at 50% -13.24%,
+            #4fbbdc 18.37%,
+            #39ad5d 48.46%
+        );
     background-size: cover;
     padding: 150px 0 100px 0;
-    
     margin-top: -100px;
+    @media screen and (min-width: $breakpoint-lg) {
+        padding-top: 250px;
+    }
+}
 
-    @media screen and (min-width:$breakpoint-sm){
-        .wrapper{
+.desc_regles {
+    @media screen and (min-width: $breakpoint-sm) {
+        .wrapper {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
         }
-        .article2{
-           align-self: flex-end;
+        .article2 {
+            align-self: flex-end;
         }
     }
 
-    @media screen and (min-width:$breakpoint-md){
-        flex-direction: row;
+    @media screen and (min-width: $breakpoint-lg) {
+        .wrapper {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .article2 {
+            align-self: flex-start;
+        }
+
+        .article1,
+        .article3 {
+            margin-top: 50px;
+        }
     }
 
-    article{
-       display: flex;
-       flex-direction: column;
-       align-items: center;
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-       text-align: center;
+        text-align: center;
 
-       background-color: var(--color-white);
-       padding: 25px;
-       border-radius: 15px;
-       margin-bottom: 50px;
+        background-color: var(--color-white);
+        padding: 25px;
+        border-radius: 15px;
+        margin-bottom: 50px;
 
-       @media screen and (min-width:$breakpoint-sm){
+        filter: drop-shadow(0px 20px 25px rgba(0, 0, 0, 0.4));
+
+        @media screen and (min-width: $breakpoint-sm) {
             width: 60%;
         }
-   }
+        @media screen and (min-width: $breakpoint-lg) {
+            width: 30%;
+            height: 450px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.desc_fun {
+    margin-top: 100px;
+    @media screen and (min-width: $breakpoint-lg) {
+        margin-top: 150px;
+    }
+    img {
+        filter: drop-shadow(0px 20px 25px rgba(0, 0, 0, 0.4));
+        margin-bottom: 25px;
+    }
+    .content_fun {
+        color: var(--color-white);
+        margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        article {
+            display: flex;
+            margin-bottom: 50px;
+        }
+        img {
+            width: 50%;
+        }
+        .cell {
+            img {
+                order: 1;
+                margin-left: 25px;
+            }
+        }
+        .amis {
+            img {
+                margin-right: 25px;
+            }
+        }
+    }
+}
+
+.maps {
+    text-align: center;
+    padding: 50px 0;
+
+    h2 {
+        margin-bottom: 25px;
+        @media screen and (min-width: $breakpoint-sm) {
+            margin-bottom: 50px;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.carte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px;
+    margin-bottom: 50px;
+
+    color: var(--color-white);
+
+    border-radius: 15px;
+
+    @media screen and (min-width: $breakpoint-sm) {
+        flex-direction: row;
+        justify-content: baseline;
+
+        padding: 75px;
+    }
+    @media screen and (min-width: $breakpoint-lg) {
+        width: 80%;
+    }
+    img {
+        max-width: 40%;
+        margin-bottom: 100px;
+        @media screen and (min-width: $breakpoint-sm) {
+            margin-bottom: 0;
+            margin-right: 10%;
+        }
+    }
+}
+.tortue {
+    background: linear-gradient(
+        180deg,
+        rgba(91, 182, 202, 0.75) 0.37%,
+        rgba(106, 202, 91, 0.75) 56.31%,
+        rgba(90, 73, 12, 0.75) 112.94%
+    );
+}
+.cimetiere {
+    background: radial-gradient(
+        295.88% 206.36% at 50% 204.46%,
+        rgba(15, 145, 153, 0.86) 49.8%,
+        rgba(42, 40, 46, 0.86) 76.04%
+    );
 }
