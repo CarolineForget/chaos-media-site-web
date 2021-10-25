@@ -1,8 +1,11 @@
 /*------------------------ BASE ---------------------------*/
-.equipe-wrapper p {
-    color: var(--color-white);
+.equipe-wrapper{
+    p{
+           color: var(--color-white);
     line-height: 1;
     font-size: 1rem;
+    }
+ 
 }
 
 /*--------------------- SECTION HERO ----------------------*/
@@ -25,15 +28,14 @@
 .equipe-video{
     display: flex;
     justify-content: center;
+
+    img{
+        width: 80%;
+        height: auto;
+    
+        margin-bottom: 50px;
+    }
 }
-
-.equipe-video img{
-    width: 100%;
-    height: auto;
-
-    margin-bottom: 50px;
-}
-
 /*-------------------- SECTION ÉQUIPE --------------------*/
 .equipe-wrapper {
     min-width: 350px;
@@ -63,10 +65,10 @@
 .personnage-image {
     margin-top: -60px;
     position: relative;
-}
 
-.personnage-image img{
-    width: 90%;
+    img{
+        width: 90%;
+    }
 }
 
 .membre-image {
@@ -80,11 +82,11 @@
     border-radius: 50%;
 
     overflow: hidden;
-}
 
-.membre-image img {
-    width: 100%;
-    height: auto;
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .membre-texte {
@@ -109,6 +111,8 @@
 
 
     /*-- SECTION ÉQUIPE --*/
+
+    
     .equipe-wrapper {
         min-width: 800px;
     }
@@ -119,6 +123,8 @@
         margin: 30px 10px;
     }
 
+   
+
     .membre-image {
         width: 70px;
         height: 70px;
@@ -126,10 +132,10 @@
 
     .membre-texte {
         margin-top: 50px;
-    }
 
-    .membre-texte p {
-        margin-bottom: 0;
+        p {
+            margin-bottom: 0;
+        }
     }
 }
 
