@@ -15,11 +15,11 @@ header {
 
     .header__brand {
         img {
-            height: 41px;
-            width: 59px;
+            height: 50px;
+            width: 50px;
             @media screen and (min-width: $breakpoint-md) {
-                height: 106px;
-                width: 68px;
+                height: 100px;
+                width: 100px;
             }
         }
     }
