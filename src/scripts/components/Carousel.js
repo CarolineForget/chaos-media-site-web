@@ -13,6 +13,7 @@ export default class Carousel {
     this.defaultOptions = {
       slidesPerView: 1,
       spaceBetween: 20,
+      loop:true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -27,41 +28,6 @@ export default class Carousel {
    */
   init() {
     let options = this.defaultOptions;
-
-    // Gestion des paramètres différents lorsqu'on veut avoir
-    // 2 slides visibles sur grand écran et une seule sur petit écran
-    if (this.element.dataset.carousel == 'split') {
-      options = {
-        ...this.defaultOptions,
-        ...{
-          slidesPerView: 1,
-          breakpoints: {
-            768: {
-              slidesPerView: 2,
-            },
-            1024: {
-              slidesPerView: 3,
-            },
-          },
-        },
-      };
-    }
-
-    // 2 slides par colonne en une vue
-    if (this.element.dataset.carousel == 'column') {
-      options = {
-        ...this.defaultOptions,
-        ...{
-          slidesPerView: 1,
-          scrollbar: {
-            el: '.swiper-scrollbar',
-          },
-          slidesPerColumn: 2,
-          spaceBetween: 30,
-          slidesPerColumnFill: 'row',
-        },
-      };
-    }
 
     // Instanciation d'un nouveau Swiper avec les options
     new Swiper(this.element, options);

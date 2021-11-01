@@ -128,16 +128,19 @@
             <div class="maps">
                 <div class="wrapper">
                     <h2>Cartes de jeu</h2>
-                    <div class="carte tortue" data-component="Modal" data-modal-id="tpl-modal">
+                    <div class="carte tortue" data-component="Modal" data-modal-id="tpl-modal-tortue">
                         <img src="assets/images/logo_officiel.png" alt="" />
                         <h4>Île Tortue</h4>
                     </div>
-                    <div class="carte cimetiere" data-component="Modal" data-modal-id="tpl-modal">
+                    <div class="carte cimetiere" data-component="Modal" data-modal-id="tpl-modal-cimetiere">
                         <img src="assets/images/logo_cimetiere.png" alt="" />
                         <h4>Cimetière</h4>
                     </div>
                 </div>
             </div>
+
+
+            
 
             <footer>
                 <div class="wrapper">
@@ -174,18 +177,38 @@
                 </div>
             </footer>
             
-            <template id="tpl-modal">
+            <template id="tpl-modal-tortue">
                 <div class="modal">
                     <div class="modal__scrim"></div>
                     <div class="modal__box">
                         <div class="modal__content">
-                            <div class="swiper">
+                            <div class="swiper-container"  data-component="Carousel">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="assets/images/cellulaire.png" alt=""></div>
+                                    <div class="swiper-slide"><img src="assets/images/cellulaire.png" alt=""></div>
+                                    <div class="swiper-slide"><img src="assets/images/cellulaire.png" alt=""></div>
+                                </div>
+                            
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <button class="modal__close js-close"></button>
+                    </div>
+                </div> 
+            </template> 
+
+            <template id="tpl-modal-cimetiere">
+                <div class="modal">
+                    <div class="modal__scrim"></div>
+                    <div class="modal__box">
+                        <div class="modal__content">
+                            <div class="swiper"  data-component="Carousel">
                                 <div class="swiper-wrapper">
                                 
                                     <div class="swiper-slide">Slide 1</div>
                                     <div class="swiper-slide">Slide 2</div>
                                     <div class="swiper-slide">Slide 3</div>
-                                    ...
                                 </div>
                             
                                 <div class="swiper-button-prev"></div>

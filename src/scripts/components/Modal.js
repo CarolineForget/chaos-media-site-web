@@ -1,5 +1,6 @@
 import Utils from '../utils/Utils';
 
+
 /** Composante Modal de Timtools */
 export default class Modal {
   /**
@@ -9,6 +10,7 @@ export default class Modal {
   constructor(element) {
     this.element = element;
     this.modalId = this.element.dataset.modalId;
+
     this.init();
   }
 
