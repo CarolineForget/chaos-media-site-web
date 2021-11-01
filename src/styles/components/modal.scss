@@ -1,0 +1,207 @@
+/* ==========================================================================
+   modal / components
+   ========================================================================== */
+.modal {
+    --modal-padding: 25px;
+    @media screen and (min-width: $breakpoint-md) {
+        --modal-padding: 45px;
+    }
+    @include cover(fixed);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    transition: opacity 0.8s $ease-out-expo 0.4s, transform 0s 0.8s;
+    transform: translateY(-100%);
+    opacity: 0;
+
+    z-index: 20;
+
+    .modal-is-active & {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0.8s $ease-out-expo, transform 0s;
+    }
+}
+
+.modal__scrim {
+    background-color: var(--color-black);
+    opacity: 0.8;
+    @include cover();
+}
+.modal__box {
+    background-color: var(--color-white);
+    border-radius: 20px;
+    color: var(--color-black);
+    width: 90vw;
+    height: 50vh;
+    position: relative;
+    z-index: 1;
+
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.4s $ease-in-expo;
+
+    @media screen and (min-width: $breakpoint-sm) {
+        width:65vw;
+    }
+    @media screen and (min-width: $breakpoint-md){
+        width: 80vw;
+        height: 60vh;
+    }
+    @media screen and (min-width: $breakpoint-lg){
+        width: 80vw;
+        height: 80vh;
+    }
+
+    .modal-is-active & {
+        opacity: 1;
+        transform: translateY(0);
+        transition: all 0.4s $ease-out-expo 0.2s;
+    }
+}
+.modal__content {
+    height: 100%;
+    overflow-y: auto;
+
+    @media screen and (min-width: $breakpoint-sm) {
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        height: 235px;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        @media screen and (min-width: $breakpoint-sm) {
+            height: 100%;
+            width: 50%;
+            border-radius: 20px 0 0 20px;
+        }
+    }
+
+    .text-modal {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            padding: 20px;
+        }
+        @media screen and (min-width: $breakpoint-lg) {
+            padding: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: var(--font-size-h1);
+            margin: 0;
+        }
+        p {
+            font-weight: 300;
+        }
+        hr {
+            margin: 10px 0;
+        }
+        button {
+            margin: 20px;
+            text-align: center;
+            align-self: center;
+        }
+    }
+
+    fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+        .input__label {
+            font-size: var(--font-size-h3);
+        }
+        .input__element {
+            padding: 10px;
+            border: 1px solid var(--color-black);
+            background: var(--color-white);
+            color: var(--color-black);
+        }
+    }
+
+    svg {
+        color: var(--color-white);
+        margin: 5px;
+        transition: all 0.2s $ease-in-cubic;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            height: 1.5em;
+            width: 1.5em;
+            color: var(--color-black);
+            top: 0px;
+            right: 2px;
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            top: 20px;
+            right: 20px;
+        }
+
+        &:hover {
+            transform: scale(0.8);
+        }
+    }
+}
+
+.modal__close {
+    --bar-width: 2px;
+    --button-size: 40px;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    height: var(--button-size);
+    outline: none;
+    padding: 0;
+    position: absolute;
+    right: calc(var(--modal-padding) / 2);
+    top: calc(var(--modal-padding) / 2);
+    width: var(--button-size);
+
+    &::before,
+    &::after {
+        background: var(--color-black);
+        bottom: 0;
+        content: '';
+        height: var(--bar-width);
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        position: absolute;
+        transition: transform 0.3s $ease-out-expo;
+        width: 80%;
+    }
+
+    &::before {
+        transform: rotate(-45deg);
+    }
+    &::after {
+        transform: rotate(45deg);
+    }
+
+    &:hover {
+        opacity: 0.7;
+        &::before {
+            transform: rotate(0);
+        }
+        &::after {
+            transform: rotate(0);
+        }
+    }
+}
+
+.modal-is-active body {
+    overflow: hidden;
+}

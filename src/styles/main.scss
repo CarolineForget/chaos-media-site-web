@@ -27,16 +27,15 @@
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
 // C’est là que la majorité de notre travail a lieu.
-
-/* @import '../../node_modules/swiper/swiper.scss';
-@import '../../node_modules/swiper/components/pagination/pagination.scss';
-@import '../../node_modules/swiper/components/scrollbar/scrollbar.scss'; */
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/components/navigation/navigation.scss';
 @import 'components/icons';
 @import 'components/header.scss';
 @import 'components/boutons.scss';
 @import 'components/acceuil.scss';
 @import 'components/equipe.scss';
 @import 'components/video.scss';
+@import 'components/modal.scss';
 
 
 // UTILITIES
