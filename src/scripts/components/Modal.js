@@ -1,5 +1,5 @@
 import Utils from '../utils/Utils';
-
+import Carousel from './Carousel';
 
 /** Composante Modal de Timtools */
 export default class Modal {
@@ -21,6 +21,7 @@ export default class Modal {
     this.element.addEventListener('click', this.open.bind(this));
 
     this.close = this.close.bind(this);
+
   }
 
   /**
@@ -63,6 +64,9 @@ export default class Modal {
 
       this.window = this.modalElement.querySelector('.modal__scrim');
       this.window.addEventListener('click', this.close);
+
+
+      new Carousel(this.modalElement.querySelector(".swiper-container"));
     } else {
       console.log("Il n'y a pas d'ID pour la fenêtre modale.");
     }
