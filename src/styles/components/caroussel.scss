@@ -1,3 +1,15 @@
-.swiper-button-prev, .swiper-button-next{
+.swiper-button-prev,
+.swiper-button-next {
     color: var(--color-black);
+}
+.modal__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-slide {
+    img {
+        //width: 100%;
+        object-fit: cover;
+    }
 }

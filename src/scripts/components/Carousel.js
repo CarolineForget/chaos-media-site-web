@@ -12,8 +12,8 @@ export default class Carousel {
     // Options par défaut pour la librairie Swiper
     this.defaultOptions = {
       slidesPerView: 1,
-      spaceBetween: 20,
-      loop:true,
+
+      loop: true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
