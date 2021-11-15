@@ -11,15 +11,20 @@
 .equipe-hero {
     text-align: center;
     padding: 0 50px;
+    h1 {
+        color: var(--color-secondary);
+    }
 }
 
 .equipe-titre {
     font-size: 1.75rem;
 }
 
-.equipe-hero-personnage img {
-    width: 80%;
-    height: auto;
+.equipe-hero-personnage {
+    img {
+        width: 80%;
+        height: auto;
+    }
 }
 
 /*--------------------- SECTION VIDÉO ---------------------*/
