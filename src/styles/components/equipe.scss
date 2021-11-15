@@ -88,7 +88,7 @@
 }
 
 .personnage-image {
-    margin-top: -60px;
+    margin-top: -100px;
     position: relative;
     transition: all 0.4s;
     img {
@@ -168,6 +168,15 @@
         p {
             margin-bottom: 0;
         }
+    }
+
+     /*-- Test Hover --*/
+    .hover-test{
+    margin-top:0 !important
+    }
+
+    .hover-test:hover{
+    margin-top: -100px
     }
 
     .equipe-membre:hover {
