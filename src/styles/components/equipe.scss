@@ -52,6 +52,8 @@
     justify-content: center;
     flex-direction: column;
 
+    margin-bottom: 100px;
+
     .membres-titre {
         font-weight: bold;
         margin-bottom: 100px;
@@ -170,13 +172,13 @@
         }
     }
 
-     /*-- Test Hover --*/
-    .hover-test{
-    margin-top:0 !important
+    /*-- Test Hover --*/
+    .hover-test {
+        margin-top: 0 !important;
     }
 
-    .hover-test:hover{
-    margin-top: -100px
+    .hover-test:hover {
+        margin-top: -100px;
     }
 
     .equipe-membre:hover {
