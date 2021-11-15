@@ -6,6 +6,8 @@
         <title>Rex Montis</title>
 
         <link rel="stylesheet" href="styles/main.css" />
+
+        <script src="scripts/main.js" defer></script>
     </head>
 
     <body>
@@ -40,19 +42,42 @@
         <div class="equipe-hero">
             <div class="equipe-titre"><p>Notre Équipe</p></div>
             <div class="equipe-hero-personnage"><img src="assets/images/Personnages_Equipe.png"  alt="Personnage Equipe"/></div>
+
+            <video autoplay muted loop id="myVideo">
+                <source src="assets/videos/equipeVideoBackground.mp4" type="video/mp4">
+              </video>
+
         </div>
 
 <!-------------------------- SECTION VIDÉO --------------------------------->
 <!-------------------------------------------------------------------------->
-        <div class="equipe-video"><img src="assets/images/Video.png" alt="video"/></div>
+        <div class="video_section">
+            <div class="wrapper">
+                <div class="video" data-component="Video" data-video-id="NsFxPPbnEjQ" >
+                    <div class="video_media js-video">
+                        <img
+                            class="js-poster"
+                            src="assets/images/template_video.png"
+                            alt="screenshot du jeu"
+                        />
+                        <svg class="icon icon--lg ">
+                            <use xlink:href="#icon-play"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 <!-------------------------- SECTION ÉQUIPE -------------------------------->
 <!-------------------------------------------------------------------------->
-        <section class="">
+        <section class="membres">
+            <div class="membres-titre"><p>Les membres de notre équipe</p></div>
             <div class="equipe-wrapper">
+
 <!-- 1 --------------------------------------------------------------------------------------------->
                 <!-- CARTE INDIVIDUELLE -->
                 <div class="equipe-membre">
+                    <a href="https://www.youtube.com/watch?v=byDozXPfxWg">
 
                     <!-- Personnage et image -->
                     <div class="membre-perso-image">
@@ -66,14 +91,16 @@
                         <p>MEEP</p>
                         <p>Personnage du jeu</p>
                     </div>
+                </a>
                 </div>
 <!-- 2 --------------------------------------------------------------------------------------------->
             <!-- CARTE INDIVIDUELLE -->
             <div class="equipe-membre">
+                <a href="https://www.youtube.com/watch?v=byDozXPfxWg">
 
                 <!-- Personnage et image -->
                 <div class="membre-perso-image">
-                    <div class="personnage-image"><img src="assets/images/Meep.png" alt="Personnage du jeu">
+                    <div class="personnage-image"><img src="assets/images/marie-eveLamontagne.png" alt="Personnage du jeu">
                         <div class="membre-image"><img src="assets/images/PhotoFemme.png" alt="Photo d'un membre"/></div>
                     </div>
 
@@ -83,15 +110,18 @@
                 <div class="membre-texte">
                     <p>Marie-Eve Lamontagne</p>
                     <p>Chargé de projet</p>
+                   
                 </div>
+            </a>
             </div>
 <!-- 3 --------------------------------------------------------------------------------------------->
             <!-- CARTE INDIVIDUELLE -->
             <div class="equipe-membre">
+                <a href="https://www.youtube.com/watch?v=4xn3QpHqvRo">
 
                 <!-- Personnage et image -->
                 <div class="membre-perso-image">
-                    <div class="personnage-image"><img src="assets/images/Meep.png" alt="Personnage du jeu">
+                    <div class="personnage-image"><img src="assets/images/maximepicard.png" alt="Personnage du jeu">
                         <div class="membre-image"><img src="assets/images/PhotoHomme.png" alt="Photo d'un membre"/></div>
                     </div>
 
@@ -102,14 +132,16 @@
                     <p>Maxime Picard</p>
                     <p>Scénariste</p>
                 </div>
+            </a>
             </div>
 <!-- 4 --------------------------------------------------------------------------------------------->
             <!-- CARTE INDIVIDUELLE -->
             <div class="equipe-membre">
+                <a href="https://www.youtube.com/watch?v=ZpMdByl_e38">
 
                 <!-- Personnage et image -->
                 <div class="membre-perso-image">
-                    <div class="personnage-image"><img src="assets/images/Meep.png" alt="Personnage du jeu">
+                    <div class="personnage-image"><img src="assets/images/pierreoliviercroteau.png" alt="Personnage du jeu">
                         <div class="membre-image"><img src="assets/images/PhotoHomme.png" alt="Photo d'un membre"/></div>
                     </div>
 
@@ -120,14 +152,16 @@
                     <p>Pierre-Olivier Croteau</p>
                     <p>Design Sonore</p>
                 </div>
+            </a>
             </div>
 <!-- 5 --------------------------------------------------------------------------------------------->
             <!-- CARTE INDIVIDUELLE -->
             <div class="equipe-membre">
+                <a href="">
 
                 <!-- Personnage et image -->
                 <div class="membre-perso-image">
-                    <div class="personnage-image"><img src="assets/images/Meep.png" alt="Personnage du jeu">
+                    <div class="personnage-image"><img src="assets/images/alexandrejugureneau.png" alt="Personnage du jeu">
                         <div class="membre-image"><img src="assets/images/PhotoHomme.png" alt="Photo d'un membre"/></div>
                     </div>
 
@@ -138,14 +172,16 @@
                     <p>Alexandre Jugureanu </p>
                     <p>Réalisateur vidéo</p>
                 </div>
+            </a>
             </div>
 <!-- 6 --------------------------------------------------------------------------------------------->
             <!-- CARTE INDIVIDUELLE -->
             <div class="equipe-membre">
+                <a href="">
 
                 <!-- Personnage et image -->
                 <div class="membre-perso-image">
-                    <div class="personnage-image"><img src="assets/images/Meep.png" alt="Personnage du jeu">
+                    <div class="personnage-image"><img src="assets/images/christopepin.png" alt="Personnage du jeu">
                         <div class="membre-image"><img src="assets/images/PhotoHomme.png" alt="Photo d'un membre"/></div>
                     </div>
 
@@ -156,14 +192,16 @@
                     <p>Christophe Pin</p>
                     <p>Réalisateur vidéo</p>
                 </div>
+            </a>
             </div>
 <!-- 7 --------------------------------------------------------------------------------------------->
             <!-- CARTE INDIVIDUELLE -->
             <div class="equipe-membre">
+                <a href="https://youtu.be/UOXvMmwOrNs">
 
                 <!-- Personnage et image -->
                 <div class="membre-perso-image">
-                    <div class="personnage-image"><img src="assets/images/Meep.png" alt="Personnage du jeu">
+                    <div class="personnage-image"><img src="assets/images/jeremybleau.png" alt="Personnage du jeu">
                         <div class="membre-image"><img src="assets/images/PhotoHomme.png" alt="Photo d'un membre"/></div>
                     </div>
 
@@ -174,14 +212,16 @@
                     <p>Jérémy Bleau </p>
                     <p>Programmeur</p>
                 </div>
+            </a>
             </div>
 <!-- 8 --------------------------------------------------------------------------------------------->
             <!-- CARTE INDIVIDUELLE -->
             <div class="equipe-membre">
+                <a href="https://youtu.be/z7Zhaaj3gFM">
 
                 <!-- Personnage et image -->
                 <div class="membre-perso-image">
-                    <div class="personnage-image"><img src="assets/images/Meep.png" alt="Personnage du jeu">
+                    <div class="personnage-image"><img src="assets/images/carolineforget.png" alt="Personnage du jeu">
                         <div class="membre-image"><img src="assets/images/PhotoFemme.png" alt="Photo d'un membre"/></div>
                     </div>
 
@@ -192,10 +232,12 @@
                     <p>Caroline Forget </p>
                     <p>Programmeuse</p>
                 </div>
+            </a>
             </div>
 <!-- 9 --------------------------------------------------------------------------------------------->
             <!-- CARTE INDIVIDUELLE -->
             <div class="equipe-membre">
+                <a href="https://www.youtube.com/watch?v=4xn3QpHqvRo">
 
                 <!-- Personnage et image -->
                 <div class="membre-perso-image">
@@ -210,14 +252,16 @@
                     <p>Gabriel Gauthier </p>
                     <p>Programmeur</p>
                 </div>
+            </a>
             </div>
 <!-- 10 --------------------------------------------------------------------------------------------->
             <!-- CARTE INDIVIDUELLE -->
             <div class="equipe-membre">
+                <a href="https://www.youtube.com/watch?v=4xn3QpHqvRo">
 
                 <!-- Personnage et image -->
                 <div class="membre-perso-image">
-                    <div class="personnage-image"><img src="assets/images/Meep.png" alt="Personnage du jeu">
+                    <div class="personnage-image"><img src="assets/images/jerrywang.png" alt="Personnage du jeu">
                         <div class="membre-image"><img src="assets/images/PhotoHomme.png" alt="Photo d'un membre"/></div>
                     </div>
 
@@ -228,14 +272,16 @@
                     <p>Jerry Wang </p>
                     <p>Programmeur</p>
                 </div>
+            </a>
             </div>
 <!-- 11 --------------------------------------------------------------------------------------------->
             <!-- CARTE INDIVIDUELLE -->
             <div class="equipe-membre">
+                <a href="https://www.youtube.com/watch?v=4xn3QpHqvRo">
 
                 <!-- Personnage et image -->
                 <div class="membre-perso-image">
-                    <div class="personnage-image"><img src="assets/images/Meep.png" alt="Personnage du jeu">
+                    <div class="personnage-image"><img src="assets/images/andrebarry.png" alt="Personnage du jeu">
                         <div class="membre-image"><img src="assets/images/PhotoHomme.png" alt="Photo d'un membre"/></div>
                     </div>
 
@@ -246,14 +292,16 @@
                     <p>André Barry</p>
                     <p>Graphiste</p>
                 </div>
+            </a>
             </div>
 <!-- 12 --------------------------------------------------------------------------------------------->
             <!-- CARTE INDIVIDUELLE -->
             <div class="equipe-membre">
+                <a href="https://www.youtube.com/watch?v=4xn3QpHqvRo">
 
                 <!-- Personnage et image -->
                 <div class="membre-perso-image">
-                    <div class="personnage-image"><img src="assets/images/Meep.png" alt="Personnage du jeu">
+                    <div class="personnage-image"><img src="assets/images/michaeljanesvilliard.png" alt="Personnage du jeu">
                         <div class="membre-image"><img src="assets/images/PhotoHomme.png" alt="Photo d'un membre"/></div>
                     </div>
 
@@ -264,14 +312,16 @@
                     <p>Michaël Janes-Villiard</p>
                     <p>Graphiste</p>
                 </div>
+            </a>
             </div>
 <!-- 13 --------------------------------------------------------------------------------------------->
             <!-- CARTE INDIVIDUELLE -->
             <div class="equipe-membre">
+                <a href="https://www.youtube.com/watch?v=4xn3QpHqvRo">
 
                 <!-- Personnage et image -->
                 <div class="membre-perso-image">
-                    <div class="personnage-image"><img src="assets/images/Meep.png" alt="Personnage du jeu">
+                    <div class="personnage-image"><img src="assets/images/mhammedkilaji.png" alt="Personnage du jeu">
                         <div class="membre-image"><img src="assets/images/PhotoHomme.png" alt="Photo d'un membre"/></div>
                     </div>
 
@@ -282,14 +332,16 @@
                     <p>M Hammed Khilaji</p>
                     <p>Graphiste</p>
                 </div>
+            </a>
             </div>
 <!-- 14 --------------------------------------------------------------------------------------------->
             <!-- CARTE INDIVIDUELLE -->
             <div class="equipe-membre">
+                <a href="https://www.youtube.com/watch?v=4xn3QpHqvRo">
 
                 <!-- Personnage et image -->
                 <div class="membre-perso-image">
-                    <div class="personnage-image"><img src="assets/images/Meep.png" alt="Personnage du jeu">
+                    <div class="personnage-image"><img src="assets/images/alexialepage.png" alt="Personnage du jeu">
                         <div class="membre-image"><img src="assets/images/PhotoFemme.png" alt="Photo d'un membre"/></div>
                     </div>
 
@@ -300,14 +352,16 @@
                     <p>Alexia Lepage</p>
                     <p>Graphiste</p>
                 </div>
+            </a>
             </div>
 <!-- 15 --------------------------------------------------------------------------------------------->
             <!-- CARTE INDIVIDUELLE -->
             <div class="equipe-membre">
+                <a href="https://www.youtube.com/watch?v=4xn3QpHqvRo">
 
                 <!-- Personnage et image -->
                 <div class="membre-perso-image">
-                    <div class="personnage-image"><img src="assets/images/Meep.png" alt="Personnage du jeu">
+                    <div class="personnage-image"><img src="assets/images/audreysenechal.png" alt="Personnage du jeu">
                         <div class="membre-image"><img src="assets/images/PhotoFemme.png" alt="Photo d'un membre"/></div>
                     </div>
 
@@ -318,10 +372,12 @@
                     <p>Audrey Sénéchal</p>
                     <p>Graphiste</p>
                 </div>
+            </a>
             </div>
 <!-- 16 --------------------------------------------------------------------------------------------->
             <!-- CARTE INDIVIDUELLE -->
             <div class="equipe-membre">
+                <a href="https://www.youtube.com/watch?v=4xn3QpHqvRo">
 
                 <!-- Personnage et image -->
                 <div class="membre-perso-image">
@@ -336,10 +392,12 @@
                     <p>Rudy Breton</p>
                     <p>Modélisateur 3d</p>
                 </div>
+            </a>
             </div>
 <!-- 17 --------------------------------------------------------------------------------------------->
             <!-- CARTE INDIVIDUELLE -->
             <div class="equipe-membre">
+                <a href="https://www.youtube.com/watch?v=4xn3QpHqvRo">
 
                 <!-- Personnage et image -->
                 <div class="membre-perso-image">
@@ -354,10 +412,12 @@
                     <p>Jean-Marie Gariépy</p>
                     <p>Modélisateur 3d</p>
                 </div>
+            </a>
             </div>
 <!-- 18 --------------------------------------------------------------------------------------------->
             <!-- CARTE INDIVIDUELLE -->
             <div class="equipe-membre">
+                <a href="https://www.youtube.com/watch?v=4xn3QpHqvRo">
 
                 <!-- Personnage et image -->
                 <div class="membre-perso-image">
@@ -372,14 +432,16 @@
                     <p>Elena Jean-Michel</p>
                     <p>Modélisateur 3d</p>
                 </div>
+            </a>
             </div>
 <!-- 19 --------------------------------------------------------------------------------------------->
             <!-- CARTE INDIVIDUELLE -->
             <div class="equipe-membre">
+                <a href="https://www.youtube.com/watch?v=4xn3QpHqvRo">
 
                 <!-- Personnage et image -->
                 <div class="membre-perso-image">
-                    <div class="personnage-image"><img src="assets/images/Meep.png" alt="Personnage du jeu">
+                    <div class="personnage-image"><img src="assets/images/audreylanglois.png" alt="Personnage du jeu">
                         <div class="membre-image"><img src="assets/images/PhotoFemme.png" alt="Photo d'un membre"/></div>
                     </div>
 
@@ -390,14 +452,16 @@
                     <p>Audrey Langlois</p>
                     <p>Modélisateur 3d</p>
                 </div>
+            </a>
             </div>
 <!-- 20 --------------------------------------------------------------------------------------------->
             <!-- CARTE INDIVIDUELLE -->
             <div class="equipe-membre">
+                <a href="https://www.youtube.com/watch?v=4xn3QpHqvRo">
 
                 <!-- Personnage et image -->
                 <div class="membre-perso-image">
-                    <div class="personnage-image"><img src="assets/images/Meep.png" alt="Personnage du jeu">
+                    <div class="personnage-image"><img src="assets/images/samuelpalmalemieux.png" alt="Personnage du jeu">
                         <div class="membre-image"><img src="assets/images/PhotoHomme.png" alt="Photo d'un membre"/></div>
                     </div>
 
@@ -408,6 +472,8 @@
                     <p>Samuel Palma-Lemieux</p>
                     <p>Modélisateur 3d</p>
                 </div>
+
+            </a>
             </div>
 <!----------------------------------------------------------------------------------------------->
             </div>
