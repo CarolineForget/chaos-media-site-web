@@ -1,12 +1,3 @@
-/*------------------------ BASE ---------------------------*/
-.equipe-wrapper {
-    p {
-        color: var(--color-white);
-        line-height: 1;
-        font-size: 1rem;
-    }
-}
-
 /*--------------------- SECTION HERO ----------------------*/
 .equipe-hero {
     text-align: center;
@@ -50,36 +41,34 @@
 }
 
 /*-------------------- SECTION ÉQUIPE --------------------*/
-.meep {
-    .membre-texte{
-        @media screen and (min-width: 1000px){
-            margin-top: -50px;
-        }
-        margin-top: -10px;
-    }
-}
 .membres {
     display: flex;
     text-align: center;
     justify-content: center;
     flex-direction: column;
 
-    margin-bottom: 100px;
+    margin: 100px 0;
 
-    .membres-titre {
+    h2{
         font-weight: bold;
         margin-bottom: 100px;
     }
-}
-.equipe-wrapper {
-    min-width: 350px;
 
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    .wrapper{
+        min-width: 350px;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        p {
+            color: var(--color-white);
+            line-height: 1;
+            font-size: 1rem;
+        } 
+    }
+   
 }
 
-.equipe-membre,
 .meep {
     width: 40%;
     height: auto;
@@ -90,24 +79,35 @@
     border-radius: 20px;
 
     box-shadow: inset 0px -21px 25px 1px rgba(0, 0, 0, 0.25);
+    .membre-texte{
+        @media screen and (min-width: 1000px){
+            margin-top: -50px;
+        }
+        margin-top: -10px;
+    }
 }
 
-.equipe-membre:hover {
-    background-color: #414141;
+   
+.equipe-membre {
+    width: 40%;
+    height: auto;
+    margin: 30px 10px;
+    padding: 20px;
+
+    background-color: #2e2e2e;
+    border-radius: 20px;
+
+    box-shadow: inset 0px -21px 25px 1px rgba(0, 0, 0, 0.25);
+    &:hover {
+        background-color: #414141;
+    }
 }
 
-.membre-perso-image {
-    display: flex;
-    justify-content: center;
-}
 
 .personnage-image {
     margin-top: -100px;
     position: relative;
     transition: all 0.4s;
-    img {
-        width: 90%;
-    }
 }
 
 .membre-image {
@@ -130,6 +130,8 @@
     }
 }
 
+
+
 .membre-texte {
     margin-top: auto;
     text-align: center;
@@ -142,7 +144,7 @@
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: $breakpoint-md) {
     /*-- SECTION HERO --*/
     .equipe-hero {
         display: flex;
@@ -158,16 +160,48 @@
     }
 
     /*-- SECTION ÉQUIPE --*/
-
-    .equipe-wrapper {
-        min-width: 800px;
+    .membres{
+        .wrapper{
+          min-width: 800px;  
+        }
     }
 
-    .equipe-membre,
-    .meep {
+    .meep{
+        width: 30%;
+        height: 280px;
+        margin: 30px 10px; 
+    }
+    .equipe-membre{
         width: 30%;
         height: 280px;
         margin: 30px 10px;
+
+        &:hover {
+            .membre-image {
+                top: 25px;
+                left: 0px;
+            
+                width: 170px;
+                height: 170px;
+            }
+
+            .personnage-image {
+               margin-top: 50px;
+               margin-left: 130px;
+               transition: all 0.4s;
+                .perso {
+                   width: 75%;
+                }
+            }
+
+            .membre-texte {
+                margin-top: -19.5px;
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
 
     .membre-image {
@@ -183,80 +217,44 @@
         }
     }
 
-    /*-- Test Hover --*/
-    .hover-test {
-        margin-top: 0 !important;
-    }
-
-    .hover-test:hover {
-        margin-top: -100px;
-    }
-
-    .equipe-membre:hover {
-        .membre-image {
-            position: absolute;
-            top: -140px;
-            left: -50px;
-
-            width: 170px;
-            height: 170px;
-            border-radius: 50%;
-
-            overflow: hidden;
-
-            transition: all 0.4s;
-
-            img {
-                width: 100%;
-                height: auto;
-            }
-        }
-
-        .personnage-image {
-            margin-top: 50px;
-            margin-left: 130px;
-            position: relative;
-
-            .perso {
-                width: 50%;
-            }
-
-            transition: all 0.4s;
-        }
-
-        .membre-texte {
-            margin-top: -19.5px;
-
-            p {
-                margin-bottom: 0;
-            }
-        }
-    }
+    
 }
 
-@media screen and (min-width: 1200px) {
-    .equipe-membre:nth-child(odd) {
-        margin-top: 110px;
-    }
+@media screen and (min-width: $breakpoint-lg) {
 
-    .meep {
-        margin-top: 110px;
-    }
-    .equipe-wrapper {
-        min-width: 1000px;
-    }
-
-    .equipe-membre,
-    .meep {
+    .equipe-membre{
         width: 20%;
         margin: 15px 10px;
+        &:nth-child(odd) {
+            margin-top: 110px;
+        }
+        &:hover{
+            .membre-image {
+                top: -140px;
+                left: -85px;
+        
+            }
+        }
     }
 
-    .membre-image {
-        width: 80px;
-        height: 80px;
+    .meep {
+        margin: 110px 10px 15px 10px;
+        width: 20%;
+    }
+    
+    .membres{
+        .wrapper{
+            min-width: 1000px;
+        }
+    }
 
-        bottom: -20px;
-        right: -20px;
+
+    .membre-image {
+        width: 30%;
+        height: 30%;
+        
+
+        bottom: -30px;
+        right: 0px;
     }
 }
