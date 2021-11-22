@@ -89,9 +89,12 @@
 
    
 .equipe-membre {
-    width: 40%;
+    position: relative;
+    transition: all 0.4s;
+
+    width: 42%;
     height: auto;
-    margin: 30px 10px;
+    margin: 40px 10px;
     padding: 20px;
 
     
@@ -101,43 +104,80 @@
     
     box-shadow: inset 0px -21px 25px 1px rgba(0, 0, 0, 0.25); 
 
+    @media screen and (min-width: $breakpoint-sm){
+        padding-top: 70px
+    }
+    @media screen and (min-width: $breakpoint-md){
+        width: 30%;
+        &:hover{
+            .perso{
+                transform: scale(1);
+            }
+            .membre-image{
+                transform: scale(0);
+            }
+        }
+    }
    
     &:hover {
         background-color: #414141;
+       
     }
 }
 
 
-.personnage-image {
-    margin-top: -100px;
-    position: relative;
-    transition: all 0.4s;
-}
-
 .membre-image {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transition: all 0.4s;
-
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 
     overflow: hidden;
     display: inline-block;
 
+    position: absolute;
+    top: -50px;
+    left: 15%;
+
     img {
         width: 100%;
         height: auto;
+    }
 
+    @media screen and (min-width: $breakpoint-sm){
+        width: 125px;
+        height: 125px;
+        left: 30%;
+
+        transition: all 250ms ease-in;
+        transform: scale(1);
+    }
+}
+.perso{
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    z-index: 5;
+
+    width: 50px;
+    height: 50px;
+    @media screen and (min-width: $breakpoint-sm){
+        right: 25%;
+    }
+    @media screen and (min-width: $breakpoint-md){
+        top: -50px;
+        left: 30%;
+
+        width: 150px;
+        height: 150px;
+
+        transition: all 250ms ease-in;
+        transform: scale(0);
     }
 }
 
 
-
 .membre-texte {
-    margin-top: auto;
+    margin-top: 50px;
     text-align: center;
     font-size: 1rem;
 
@@ -175,72 +215,11 @@
         height: 280px;
         margin: 30px 10px; 
     }
-    .equipe-membre{
-        width: 30%;
-        height: 280px;
-        margin: 30px 10px;
-
-        &:hover {
-            .membre-image {
-                top: 25px;
-                left: 0px;
-            
-                width: 170px;
-                height: 170px;
-            }
-
-            .personnage-image {
-               margin-top: 50px;
-               margin-left: 130px;
-               transition: all 0.4s;
-                .perso {
-                   width: 75%;
-                }
-            }
-
-            .membre-texte {
-                margin-top: -19.5px;
-
-                p {
-                    margin-bottom: 0;
-                }
-            }
-        }
-    }
-
-    .membre-image {
-        width: 70px;
-        height: 70px;
-    }
-
-    .membre-texte {
-        margin-top: 50px;
-
-        p {
-            margin-bottom: 0;
-        }
-    }
-
     
+
 }
 
 @media screen and (min-width: $breakpoint-lg) {
-
-    .equipe-membre{
-        width: 20%;
-        margin: 15px 10px;
-        &:nth-child(odd) {
-            margin-top: 110px;
-        }
-        &:hover{
-            .membre-image {
-                top: -140px;
-                left: -85px;
-        
-            }
-        }
-    }
-
     .meep {
         margin: 110px 10px 15px 10px;
         width: 20%;
@@ -250,15 +229,5 @@
         .wrapper{
             min-width: 1000px;
         }
-    }
-
-
-    .membre-image {
-        width: 30%;
-        height: 30%;
-        
-
-        bottom: -30px;
-        right: 0px;
     }
 }

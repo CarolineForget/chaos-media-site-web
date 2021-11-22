@@ -12,7 +12,7 @@
 
     <body>
         <div class="site_container" data-component="Scrolly">
-            <header class="header" data-component="Header" data-autohide="true" data-pourcentage="0">
+            <header data-scrolly="fromLeft" class="header" data-component="Header" data-autohide="true" data-pourcentage="0">
                 <div class="wrapper">
                     <a href="index.html" class="header__brand"><img src="assets/images/logo_officiel.png" alt="" /></a>
                     <nav class="nav-primary">
@@ -33,9 +33,9 @@
 
             <!-------------------------- SECTION HERO ---------------------------------->
             <!-------------------------------------------------------------------------->
-            <div class="equipe-hero">
-                <div class="equipe-titre"><h1>Notre Équipe</h1></div>
-                <div class="equipe-hero-personnage">
+            <div class="equipe-hero" >
+                <div data-scrolly="fromBottom" class="equipe-titre"><h1>Notre Équipe</h1></div>
+                <div data-scrolly="fromScale" class="equipe-hero-personnage">
                     <img src="assets/images/Personnages_Equipe.png" alt="Personnage Equipe" />
                 </div>
 
@@ -46,7 +46,7 @@
 
             <!-------------------------- SECTION VIDÉO --------------------------------->
             <!-------------------------------------------------------------------------->
-            <div class="video_section">
+            <div class="video_section" data-scrolly="fromRight">
                 <div class="wrapper">
                     <div class="video" data-component="Video" data-video-id="NsFxPPbnEjQ">
                         <div class="video_media js-video">
