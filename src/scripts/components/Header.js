@@ -10,7 +10,7 @@ export default class Header {
     this.scrollPosition = 0;
     this.lastScrollPosition = 0;
     this.html = document.documentElement;
-    this.autoHide = element.dataset.autoHide || false;
+    this.autohide = element.dataset.autohide || false;
 
     this.init();
     this.initNavMobile();
@@ -20,8 +20,8 @@ export default class Header {
    * Méthode d'initialisation - Header en version desktop
    */
   init() {
-    //Active l'événement scroll si le dataset autoHide est "true".
-    if (this.autoHide == 'true') {
+    //Active l'événement scroll si le dataset autohide est "true".
+    if (this.autohide == 'true') {
       window.addEventListener('scroll', this.onScroll.bind(this));
     } else {
       console.log('Le Header ne se cache pas.');

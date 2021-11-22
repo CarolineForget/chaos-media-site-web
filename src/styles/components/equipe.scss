@@ -3,7 +3,7 @@
     text-align: center;
     padding: 0 50px;
     h1 {
-        color: var(--color-secondary);
+        color: var(--color--green);
     }
 }
 
@@ -94,10 +94,14 @@
     margin: 30px 10px;
     padding: 20px;
 
+    
     background-color: #2e2e2e;
     border-radius: 20px;
 
-    box-shadow: inset 0px -21px 25px 1px rgba(0, 0, 0, 0.25);
+    
+    box-shadow: inset 0px -21px 25px 1px rgba(0, 0, 0, 0.25); 
+
+   
     &:hover {
         background-color: #414141;
     }
