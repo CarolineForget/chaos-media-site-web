@@ -12,8 +12,8 @@
     </head>
 
     <body>
-        <div class="site_container">
-            <header class="header" data-component="Header" data-autohide="true" data-pourcentage="0">
+        <div class="site_container" data-component="Scrolly">
+            <header class="header" data-component="Header" data-autohide="true" data-pourcentage="0" data-scrolly="fromLeft" >
                 <div class="wrapper">
                     <a href="index.html" class="header__brand"><img src="assets/images/logo_officiel.png" alt="" /></a>
                     <nav class="nav-primary">
@@ -32,18 +32,18 @@
                 </div>
             </header>
 
-            <div class="hero">
+            <div class="hero" data-scrolly="fromOpacity">
                 <div class="wrapper">
                     <div class="content_hero">
-                        <img src="assets/images/rex_montis_hero.png" alt="" />
+                        <img data-scrolly="fromScale" src="assets/images/rex_montis_hero.png" alt="" />
                         <div class="hero_texte">
-                            <h1>Soyez le roi DE LA MONTAGNE</h1>
+                            <h1 data-scrolly="fromBottom">Soyez le roi DE LA MONTAGNE</h1>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="video_section">
+            <div class="video_section" data-scrolly="fromRight">
                 <div class="wrapper">
                     <div class="video" data-component="Video" data-video-id="NsFxPPbnEjQ">
                         <div class="video_media js-video">
@@ -59,7 +59,7 @@
             <section class="description">
                 <div class="desc_regles">
                     <div class="wrapper">
-                        <article class="articleText article1">
+                        <article data-scrolly="fromBottomSlow" class="articleText article1">
                             <div class="icon_article">
                                 <img src="assets/images/vent_gauche.png" alt="" />
                                 <img src="assets/images/vent_droit.png" alt="" />
@@ -70,7 +70,7 @@
                                 carte et attire les dans la direction contraire du sommet!
                             </p>
                         </article>
-                        <article class="articleText article2">
+                        <article data-scrolly="fromBottomLessQuick" class="articleText article2">
                             <div class="icon_article">
                                 <img src="assets/images/sommet.png" alt="" />
                             </div>
@@ -80,7 +80,7 @@
                                 montagne!
                             </p>
                         </article>
-                        <article class="articleText article3">
+                        <article data-scrolly="fromBottom" class="articleText article3">
                             <div class="icon_article">
                                 <img src="assets/images/perso_orange.png" alt="" />
                                 <img src="assets/images/perso_bleu.png" alt="" />
@@ -97,8 +97,8 @@
                 <div class="desc_fun">
                     <div class="wrapper">
                         <article class="amis">
-                            <img src="assets/images/amis.png" alt="" />
-                            <div class="content_fun">
+                            <img data-scrolly="fromScaleY" src="assets/images/amis.png" alt="" />
+                            <div class="content_fun" data-scrolly="fromRight">
                                 <h2>Joue avec tes amis</h2>
                                 <p>
                                     Rassemble tous tes amis et viens jouer à RexMontis! Avec une limite de 8 joueur par
@@ -107,8 +107,8 @@
                             </div>
                         </article>
                         <article class="cell">
-                            <img src="assets/images/cellulaire.png" alt="" />
-                            <div class="content_fun">
+                            <img data-scrolly="fromScaleY" src="assets/images/cellulaire.png" alt="" />
+                            <div class="content_fun" data-scrolly="fromLeft">
                                 <h2>Utilise la manette pour jouer</h2>
                                 <p>
                                     Avec le bluetooth des manette Xbox, vous pouvez bien vous installer pour jouer à notre jeu,
@@ -122,19 +122,19 @@
 
             <div class="maps">
                 <div class="wrapper">
-                    <h2>Cartes de jeu</h2>
-                    <div class="carte tortue" data-component="Modal" data-modal-id="tpl-modal-tortue">
+                    <h2 data-scrolly="fromBottom">Cartes de jeu</h2>
+                    <div data-scrolly="fromLeft" class="carte tortue" data-component="Modal" data-modal-id="tpl-modal-tortue">
                         <img src="assets/images/logo_officiel.png" alt="" />
                         <h4>Île Tortue</h4>
                     </div>
-                    <div class="carte cimetiere" data-component="Modal" data-modal-id="tpl-modal-cimetiere">
+                    <div data-scrolly="fromRight" class="carte cimetiere" data-component="Modal" data-modal-id="tpl-modal-cimetiere">
                         <img src="assets/images/logo_cimetiere.png" alt="" />
                         <h4>Cimetière</h4>
                     </div>
                 </div>
             </div>
 
-            <footer>
+            <footer data-scrolly="fromOpacity">
                 <div class="wrapper">
                     <div class="menu_footer">
                         <a href="index.html"><img src="assets/images/logo_officiel.png" alt="" /></a>

@@ -11,7 +11,7 @@ header {
     display: flex;
     align-items: center;
 
-    padding: 15px 0;
+    padding: 5px 0;
 
     .header__brand {
         img {
@@ -128,6 +128,7 @@ header {
         padding: 0;
         display: block;
         z-index: 2;
+        background-color: transparent;
     }
 
     .nav-is-active & {

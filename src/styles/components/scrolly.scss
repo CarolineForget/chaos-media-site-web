@@ -1,0 +1,117 @@
+.has-js {
+    [data-scrolly='fromLeft'] {
+        opacity: 0;
+        transition: all 1s ease-out;
+        transform: translateX(-100%);
+
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='fromRight'] {
+        opacity: 0;
+        transition: all 1s ease-out;
+        transform: translateX(100%);
+
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='fromTop'] {
+        opacity: 0;
+        transition: all 1s ease-in;
+        transform: translateY(-100%);
+
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    [data-scrolly='fromBottom'] {
+        opacity: 0;
+        transition: all 1s ease-in;
+        transform: translateY(100%);
+
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='fromBottomQuick'] {
+        opacity: 0;
+        transition: all 250ms ease-in;
+        transform: translateY(100%);
+
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='fromBottomLessQuick'] {
+        opacity: 0;
+        transition: all 500ms ease-in;
+        transform: translateY(100%);
+
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='fromBottomSlow'] {
+        opacity: 0;
+        transition: all 750ms ease-in;
+        transform: translateY(100%);
+
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='fromOpacity'] {
+        opacity: 0;
+        transition: all 0.5s ease-in;
+
+        &.is-active {
+            opacity: 1;
+        }
+    }
+    [data-scrolly='fromScale'] {
+        opacity: 0;
+        transition: all 0.5s ease-out;
+        transform: scale(0);
+
+        &.is-active {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    [data-scrolly='fromScaleX'] {
+        opacity: 0;
+        transition: all 0.5s ease-out;
+        transform: scaleX(0);
+
+        &.is-active {
+            opacity: 1;
+            transform: scaleX(1);
+        }
+    }
+    [data-scrolly='fromScaleY'] {
+        opacity: 0;
+        transition: all 0.5s ease-out;
+        transform: scaleY(0);
+
+        &.is-active {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+}
