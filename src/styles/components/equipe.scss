@@ -49,12 +49,12 @@
 
     margin: 100px 0;
 
-    h2{
+    h2 {
         font-weight: bold;
         margin-bottom: 100px;
     }
 
-    .wrapper{
+    .wrapper {
         min-width: 350px;
 
         display: flex;
@@ -64,30 +64,48 @@
             color: var(--color-white);
             line-height: 1;
             font-size: 1rem;
-        } 
+        }
     }
-   
 }
 
 .meep {
-    width: 40%;
+    position: relative;
+
+    width: 42%;
     height: auto;
-    margin: 30px 10px;
+    margin: 40px 10px;
     padding: 20px;
 
     background-color: #2e2e2e;
     border-radius: 20px;
 
     box-shadow: inset 0px -21px 25px 1px rgba(0, 0, 0, 0.25);
-    .membre-texte{
-        @media screen and (min-width: 1000px){
-            margin-top: -50px;
+    transform: scale(1);
+
+    @media screen and (min-width: $breakpoint-sm) {
+        padding-top: 70px;
+    }
+    @media screen and (min-width: $breakpoint-md) {
+        width: 30%;
+    }
+
+    img {
+        position: absolute;
+        top: -50px;
+        left: 15%;
+
+        width: 100px;
+        height: 100px;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            width: 125px;
+            height: 115px;
+
+            left: 30%;
         }
-        margin-top: -10px;
     }
 }
 
-   
 .equipe-membre {
     position: relative;
     transition: all 0.4s;
@@ -97,34 +115,39 @@
     margin: 40px 10px;
     padding: 20px;
 
-    
     background-color: #2e2e2e;
     border-radius: 20px;
 
-    
-    box-shadow: inset 0px -21px 25px 1px rgba(0, 0, 0, 0.25); 
+    box-shadow: inset 0px -21px 25px 1px rgba(0, 0, 0, 0.25);
 
-    @media screen and (min-width: $breakpoint-sm){
-        padding-top: 70px
+    @media screen and (min-width: $breakpoint-sm) {
+        padding-top: 70px;
     }
-    @media screen and (min-width: $breakpoint-md){
+    @media screen and (min-width: $breakpoint-md) {
         width: 30%;
-        &:hover{
-            .perso{
+        &:hover {
+            .perso {
                 transform: scale(1);
             }
-            .membre-image{
+            .membre-image {
                 transform: scale(0);
             }
         }
     }
-   
+    @media screen and (min-width: $breakpoint-lg) {
+        width: 20%;
+        &:nth-child(even) {
+            margin-bottom: 110px;
+        }
+        &:nth-child(odd) {
+            margin-top: 110px;
+        }
+    }
+
     &:hover {
         background-color: #414141;
-       
     }
 }
-
 
 .membre-image {
     width: 100px;
@@ -143,7 +166,7 @@
         height: auto;
     }
 
-    @media screen and (min-width: $breakpoint-sm){
+    @media screen and (min-width: $breakpoint-sm) {
         width: 125px;
         height: 125px;
         left: 30%;
@@ -152,20 +175,20 @@
         transform: scale(1);
     }
 }
-.perso{
+.perso {
     position: absolute;
     top: 20px;
     right: 5%;
-    z-index: 5;
+    z-index: 2;
 
     width: 50px;
     height: 50px;
-    @media screen and (min-width: $breakpoint-sm){
+    @media screen and (min-width: $breakpoint-sm) {
         right: 25%;
     }
-    @media screen and (min-width: $breakpoint-md){
-        top: -50px;
-        left: 30%;
+    @media screen and (min-width: $breakpoint-md) {
+        top: -35%;
+        left: 25%;
 
         width: 150px;
         height: 150px;
@@ -175,17 +198,10 @@
     }
 }
 
-
 .membre-texte {
     margin-top: 50px;
     text-align: center;
     font-size: 1rem;
-
-    a {
-        background-color: yellow;
-        border-radius: 20px;
-        margin-top: 10px 30px;
-    }
 }
 
 @media screen and (min-width: $breakpoint-md) {
@@ -204,19 +220,11 @@
     }
 
     /*-- SECTION ÉQUIPE --*/
-    .membres{
-        .wrapper{
-          min-width: 800px;  
+    .membres {
+        .wrapper {
+            min-width: 800px;
         }
     }
-
-    .meep{
-        width: 30%;
-        height: 280px;
-        margin: 30px 10px; 
-    }
-    
-
 }
 
 @media screen and (min-width: $breakpoint-lg) {
@@ -224,9 +232,9 @@
         margin: 110px 10px 15px 10px;
         width: 20%;
     }
-    
-    .membres{
-        .wrapper{
+
+    .membres {
+        .wrapper {
             min-width: 1000px;
         }
     }
