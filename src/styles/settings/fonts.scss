@@ -4,7 +4,8 @@
 /// Font family
 :root {
     --font-primary: 'Baloo 2', sans-serif;
-    --font-secondary: 'Titan One', sans-serif;
+    // --font-secondary: 'Titan One', sans-serif;
+    --font-secondary: 'gigalypse', sans-serif;
 
     --font-size-content: 1.25rem;
     @media screen and (min-width: $breakpoint-md) {
