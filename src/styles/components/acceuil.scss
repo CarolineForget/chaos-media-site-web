@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom left;
-    background-color: rgba($color: #fff, $alpha: 0.2);
+    // background-color: rgba($color: #fff, $alpha: 0.2);
 
     .content_hero {
         display: flex;
@@ -21,9 +21,6 @@
 
         @media screen and (min-width: $breakpoint-sm) {
             flex-direction: row;
-            // img {
-            //     width: 60%;
-            // }
         }
     }
     .hero_texte {
