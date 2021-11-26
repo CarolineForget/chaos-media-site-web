@@ -239,6 +239,11 @@
         }
     }
 
+    .carte:hover {
+        box-shadow: 20px 25px 1.5em rgba(0, 0, 0, 0.4);
+        transition: all 250ms ease;
+    }
+
     .tortue {
         background-image: url('../../assets/images/tortue_texture.png');
         background-repeat: no-repeat;

@@ -21,7 +21,6 @@ export default class Modal {
     this.element.addEventListener('click', this.open.bind(this));
 
     this.close = this.close.bind(this);
-
   }
 
   /**
@@ -65,8 +64,7 @@ export default class Modal {
       this.window = this.modalElement.querySelector('.modal__scrim');
       this.window.addEventListener('click', this.close);
 
-
-      new Carousel(this.modalElement.querySelector(".swiper-container"));
+      new Carousel(this.modalElement.querySelector('.swiper-container'));
     } else {
       console.log("Il n'y a pas d'ID pour la fenêtre modale.");
     }
@@ -84,28 +82,10 @@ export default class Modal {
    * en fonction du type (ID) de fenêtre modale.
    */
   updateContent() {
-    if (this.modalId == 'tpl-modal-carousel') {
+    //Selectionne le bon element pour remplace le HTML et le remplace
+    if (this.modalId == 'tpl-modal-videos') {
       this.modalElement.innerHTML = Utils.parseTemplate(this.modalElement.innerHTML, {
-        title: this.element.dataset.modalTitle,
-      });
-
-      const bgModal = this.modalElement.querySelector('.modal__content');
-
-      bgModal.style.backgroundImage = Utils.parseTemplate(bgModal.style.backgroundImage, {
-        src: this.element.dataset.modalBg,
-      });
-    }
-
-    if (this.modalId == 'tpl-modal-show') {
-      this.modalElement.innerHTML = Utils.parseTemplate(this.modalElement.innerHTML, {
-        title: this.element.dataset.modalTitle,
-        description: this.element.dataset.modalDescription,
-      });
-
-      const bgModal = this.modalElement.querySelector('.modal__content');
-
-      bgModal.style.backgroundImage = Utils.parseTemplate(bgModal.style.backgroundImage, {
-        src: this.element.dataset.modalBg,
+        contenu: this.element.innerHTML,
       });
     }
   }

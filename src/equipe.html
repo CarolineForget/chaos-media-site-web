@@ -19,9 +19,6 @@
                     <nav class="nav-primary">
                         <ul>
                             <li>
-                                <a href="index.html" class="nav-primary__item">Accueil</a>
-                            </li>
-                            <li>
                                 <a href="#" class="nav-primary__item">Équipe</a>
                             </li>
                         </ul>
@@ -86,26 +83,24 @@
                     </div>
                     <!-- 2 --------------------------------------------------------------------------------------------->
                     <!-- CARTE INDIVIDUELLE -->
-                    <div class="equipe-membre" data-scrolly="fromBottom">
-                        <a href="https://www.youtube.com/watch?v=byDozXPfxWg">
-                            <!-- Personnage et image -->
-                            <div class="personnage-image">
-                                <img
-                                    class="perso"
-                                    src="assets/images/EquipePerso/MEEP_Marie-Eve.png"
-                                    alt="Personnage du jeu"
-                                />
-                                <div class="membre-image">
-                                    <img src="assets/images/marie-eve-lamontagne.jpg" alt="Photo d'un membre" />
-                                </div>
+                    <div data-modal-id="tpl-modal-videos" class="equipe-membre" data-scrolly="fromBottom">
+                        <!-- Personnage et image -->
+                        <div class="personnage-image">
+                            <img
+                                class="perso"
+                                src="assets/images/EquipePerso/MEEP_Marie-Eve.png"
+                                alt="Personnage du jeu"
+                            />
+                            <div class="membre-image">
+                                <img src="assets/images/marie-eve-lamontagne.jpg" alt="Photo d'un membre" />
                             </div>
+                        </div>
 
-                            <!-- Nom et Rôle -->
-                            <div class="membre-texte">
-                                <p>Marie-Eve Lamontagne</p>
-                                <p>Chargé de projet</p>
-                            </div>
-                        </a>
+                        <!-- Nom et Rôle -->
+                        <div class="membre-texte">
+                            <p>Marie-Eve Lamontagne</p>
+                            <p>Chargé de projet</p>
+                        </div>
                     </div>
                     <!-- 3 --------------------------------------------------------------------------------------------->
                     <!-- CARTE INDIVIDUELLE -->
@@ -193,7 +188,7 @@
                             </div>
 
                             <!-- Nom et Rôle -->
-                            <div class="membre-texte" data-scrolly="fromBottom">
+                            <div class="membre-texte">
                                 <p>Christophe Pin</p>
                                 <p>Réalisateur vidéo</p>
                             </div>
@@ -524,7 +519,7 @@
 
             <!-------------------------- SECTION TEMPLATE-------------------------------->
             <!-------------------------------------------------------------------------->
-            <template id="tpl-modal-tortue">
+            <template id="tpl-modal-videos">
                 <div class="modal">
                     <div class="modal__scrim"></div>
                     <div class="modal__box">
