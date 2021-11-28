@@ -63,9 +63,53 @@
 }
 
 .modal__close {
+    --bar-width: 2px;
+    --button-size: 40px;
+
     background: transparent;
     border: none;
+    cursor: pointer;
+    height: var(--button-size);
     outline: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    position: absolute;
+    right: calc(var(--modal-padding) / 2);
+    top: calc(var(--modal-padding) / 2);
+    width: var(--button-size);
+    z-index: 2;
+
+    &::before,
+    &::after {
+        background: var(--color-white);
+        bottom: 0;
+        content: '';
+        height: var(--bar-width);
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        position: absolute;
+        transition: transform 0.3s $ease-out-expo;
+        width: 80%;
+    }
+
+    &::before {
+        transform: rotate(-45deg);
+    }
+    &::after {
+        transform: rotate(45deg);
+    }
+
+    &:hover {
+        opacity: 0.7;
+        &::before {
+            transform: rotate(0);
+        }
+        &::after {
+            transform: rotate(0);
+        }
+    }
 }
 
 .modal-is-active body {
