@@ -37,7 +37,15 @@
             margin-top: 25px;
         }
         h1 {
-            color: var(--color-tiersary);
+            // color: var(--color-tiersary);
+            background: -webkit-linear-gradient(
+                #00bbf2,
+                #02b8f0,
+                #09b0ea,
+                #16a2df
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         @media screen and (min-width: $breakpoint-sm) {
