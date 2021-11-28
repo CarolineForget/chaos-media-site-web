@@ -84,9 +84,8 @@ export default class Modal {
   updateContent() {
     //Selectionne le bon element pour remplace le HTML et le remplace
     if (this.modalId == 'tpl-modal-videos') {
-      this.modalElement.innerHTML = Utils.parseTemplate(this.modalElement.innerHTML, {
-        contenu: this.element.innerHTML,
-      });
+      this.videoId = this.element.dataset.videoId;
+      console.log(this.videoId);
     }
   }
 }

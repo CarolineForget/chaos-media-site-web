@@ -49,7 +49,7 @@
             <!-------------------------------------------------------------------------->
             <div class="video_section" data-scrolly="fromBottom">
                 <div class="wrapper">
-                    <div class="video" data-component="Video" data-video-id="NsFxPPbnEjQ">
+                    <div class="video" data-component="Video" data-video-id="9FHvVf27JTg">
                         <div class="video_media js-video">
                             <img class="js-poster" src="assets/images/thumbnail_accueil.png" alt="screenshot du jeu" />
                             <svg class="icon icon--lg">
@@ -83,7 +83,12 @@
                     </div>
                     <!-- 2 --------------------------------------------------------------------------------------------->
                     <!-- CARTE INDIVIDUELLE -->
-                    <div data-modal-id="tpl-modal-videos" class="equipe-membre" data-scrolly="fromBottom">
+                    <div
+                        class="equipe-membre"
+                        data-scrolly="fromBottom"
+                        data-component="Modal"
+                        data-modal-id="tpl-modal-cimetiere"
+                    >
                         <!-- Personnage et image -->
                         <div class="personnage-image">
                             <img
@@ -525,7 +530,16 @@
                     <div class="modal__box">
                         <div class="modal__content">
                             <div class="video" data-component="Video" data-video-id="NsFxPPbnEjQ">
-                                <div class="video_media js-video"></div>
+                                <div class="video_media js-video">
+                                    <img
+                                        class="js-poster"
+                                        src="assets/images/thumbnail_accueil.png"
+                                        alt="screenshot du jeu"
+                                    />
+                                    <svg class="icon icon--lg">
+                                        <use xlink:href="#icon-play"></use>
+                                    </svg>
+                                </div>
                             </div>
                             <button class="modal__close js-close"></button>
                         </div>
