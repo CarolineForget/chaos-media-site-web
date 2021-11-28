@@ -1,0 +1,14 @@
+.gallerie__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 300px);
+    gap: 20px;
+}
+
+.grid__element {
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
