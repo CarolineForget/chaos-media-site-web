@@ -43,9 +43,8 @@
                 <div class="wrapper">
                     <div class="content_hero">
                         <div class="hero_texte">
-                            <h1 data-scrolly="fromBottom">SOYEZ LE ROI DE LA MONTAGNE</h1>
+                            <h1 data-scrolly="fromBottom">NOTRE GALLERIE</h1>
                         </div>
-                        <img data-scrolly="fromBottom" src="assets/images/Personnages_Equipe.png" alt="" />
                     </div>
                 </div>
             </div>
@@ -53,7 +52,7 @@
             <section class="gallerie">
                 <div class="wrapper">
                     <div class="gallerie__grid">
-                        <div class="grid__element">
+                        <div class="grid__element" data-component="Modal" data-modal-id="tpl-modal-gallerie">
                             <img src="assets/images/cim_caroussel.png" alt="image cimetiere" />
                         </div>
                         <div class="grid__element">
@@ -187,6 +186,16 @@
                     <p class="footnote">Tous droits réservés à l'équipe de Rex Montis © 2021</p>
                 </div>
             </footer>
+
+            <template id="tpl-modal-gallerie">
+                <div class="modal">
+                    <div class="modal__scrim"></div>
+                    <div class="modal__box">
+                        <div class="modal__content"></div>
+                        <button class="modal__close js-close"></button>
+                    </div>
+                </div>
+            </template>
         </div>
     </body>
 </html>

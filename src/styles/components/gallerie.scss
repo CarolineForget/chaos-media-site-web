@@ -1,14 +1,35 @@
+.gallerie {
+    background-image: url(../../assets/images/bg_accueil.png);
+    background-size: cover;
+    padding: 150px 0 100px 0;
+}
+
 .gallerie__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(10, 300px);
+    grid-template-rows: repeat(8, 300px);
     gap: 20px;
+    @media screen and (max-width: $breakpoint-md) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .grid__element {
     img {
+        border-radius: 10px;
         object-fit: cover;
         width: 100%;
         height: 100%;
     }
+}
+
+.grid__element:hover {
+    transition: all 400ms ease;
+    transform: scale(1.05);
+}
+.grid__element:not(:hover) {
+    transition: all 400ms ease;
 }
