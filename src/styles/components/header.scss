@@ -25,9 +25,9 @@ header {
     }
 
     .header-is-hidden.is-scrolling-down:not(.nav-is-active) & {
-        transform: translateY(-100%) translateX(5px);
+        transform: translateY(-100%) translateY(5px);
         transition: all 0.4 ease-in;
-        background-color: var(--color-primary);
+        background-color: var(--color-tiersary);
     }
 
     .wrapper {
@@ -115,10 +115,6 @@ header {
     padding-bottom: 50px;
     transform: translateY(-100%);
     transition: all 0.4s $ease-in-sine;
-
-    .header-is-hidden.is-scrolling-down:not(.nav-is-active) & {
-        background-color: var(--color-primary);
-    }
 
     @media screen and (min-width: $breakpoint-md) {
         transform: none;

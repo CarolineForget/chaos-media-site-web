@@ -37,7 +37,15 @@
             margin-top: 25px;
         }
         h1 {
-            color: var(--color-tiersary);
+            // color: var(--color-tiersary);
+            background: -webkit-linear-gradient(
+                #00bbf2,
+                #02b8f0,
+                #09b0ea,
+                #16a2df
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         @media screen and (min-width: $breakpoint-sm) {
@@ -237,11 +245,17 @@
             flex-direction: column;
             align-items: center;
         }
-    }
 
-    .carte:hover {
-        box-shadow: 20px 25px 1.5em rgba(0, 0, 0, 0.4);
-        transition: all 250ms ease;
+        .carte:hover {
+            box-shadow: 5px 5px 1.5em rgba(0, 0, 0, 0.4);
+            width: 81%;
+            height: 457px;
+            margin-bottom: 43px;
+            transition: all 400ms ease;
+        }
+        .carte:not(:hover) {
+            transition: all 400ms ease;
+        }
     }
 
     .tortue {
@@ -263,7 +277,8 @@
     align-items: center;
     cursor: pointer;
 
-    padding: 50px;
+    width: 100%;
+    height: 450px;
     margin-bottom: 50px;
 
     color: var(--color-white);
@@ -272,9 +287,7 @@
 
     @media screen and (min-width: $breakpoint-sm) {
         flex-direction: row;
-        justify-content: baseline;
-
-        padding: 75px;
+        justify-content: center;
     }
     @media screen and (min-width: $breakpoint-lg) {
         width: 80%;
