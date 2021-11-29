@@ -2,13 +2,24 @@
 .equipe-hero {
     text-align: center;
     padding: 0 50px;
-   
+    background-image: url('../assets/images/nuage.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding: 100px 0 150px 0;
+    
+    z-index: 10;
 
     h1 {
-        background: -webkit-linear-gradient(#00A3FF, #005EB6);
+        background: -webkit-linear-gradient(
+                #00bbf2,
+                #02b8f0,
+                #09b0ea,
+                #16a2df
+            );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         transform: scaleY(1.35);
+        margin-top: -50px;
     }
 }
 
@@ -27,6 +38,7 @@
 .equipe-video {
     display: flex;
     justify-content: center;
+    z-index: 0;
 
     img {
         width: 80%;
@@ -40,7 +52,6 @@
     position: fixed;
     right: 0;
     bottom: 0;
-    z-index: -1;
     min-width: 100%;
     min-height: 50%;
     z-index: -20;
@@ -69,7 +80,11 @@
         p {
             color: var(--color-white);
             line-height: 1;
+
             font-size: 1rem;
+            @media screen and (min-width: $breakpoint-sm) {
+                font-size: 1.25rem;
+            }
         }
     }
 }
@@ -109,6 +124,13 @@
 
             left: 30%;
         }
+    }
+
+    p{
+        font-size: 1rem;
+            @media screen and (min-width: $breakpoint-sm) {
+                font-size: 1.25rem;
+            }
     }
 }
 
@@ -219,7 +241,6 @@
         justify-content: space-around;
         align-items: center;
 
-        background-image: url();
         padding-top: 100px;
     }
 
