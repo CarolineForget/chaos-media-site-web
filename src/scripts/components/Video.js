@@ -7,6 +7,7 @@ export default class Video {
   constructor(element) {
     this.element = element;
 
+    //this.videoElement = this.element.querySelector('.video');
     this.videoContainer = this.element.querySelector('.js-video');
     this.poster = this.element.querySelector('.js-poster');
     this.videoId = this.element.dataset.videoId;
