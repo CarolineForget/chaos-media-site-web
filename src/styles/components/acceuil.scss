@@ -37,7 +37,6 @@
             margin-top: 25px;
         }
         h1 {
-            // color: var(--color-tiersary);
             background: -webkit-linear-gradient(
                 #00bbf2,
                 #02b8f0,
@@ -55,17 +54,6 @@
 }
 
 .description {
-    // background: linear-gradient(
-    //         180deg,
-    //         rgba(91, 182, 202, 0.75) 2.38%,
-    //         rgba(106, 202, 91, 0.75) 65.39%,
-    //         rgba(90, 73, 12, 0.75) 105.17%
-    //     ),
-    //     radial-gradient(
-    //         367.46% 178.71% at 50% -13.24%,
-    //         #4fbbdc 18.37%,
-    //         #39ad5d 48.46%
-    //     );
     background-image: url(../../assets/images/bg_accueilCimetiere.png);
     background-size: cover;
     padding: 150px 0 100px 0;
