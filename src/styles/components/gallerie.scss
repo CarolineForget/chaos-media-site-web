@@ -33,3 +33,27 @@
 .grid__element:not(:hover) {
     transition: all 400ms ease;
 }
+
+
+
+.modal-is-active .gallerie_modal_img{
+    img{
+       object-fit: cover;
+        border-radius: 20px;
+
+        width: 90vw;
+        height: 50vh;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            width: 65vw;
+        }
+        @media screen and (min-width: $breakpoint-md) {
+            width: 80vw;
+            height: 60vh;
+        }
+        @media screen and (min-width: $breakpoint-lg) {
+            width: 80vw;
+            height: 80vh;
+        }  
+    }
+}

@@ -89,5 +89,10 @@ export default class Modal {
         videoId: this.element.dataset.videoMembre,
       });
     }
+    if (this.modalId == 'tpl-modal-galerie') {
+      this.modalElement.innerHTML = Utils.parseTemplate(this.modalElement.innerHTML, {
+        sourceImg: this.element.innerHTML,
+      });
+    }
   }
 }
