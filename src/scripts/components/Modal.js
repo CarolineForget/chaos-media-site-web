@@ -1,5 +1,6 @@
 import Utils from '../utils/Utils';
 import Carousel from './Carousel';
+import Video from './Video';
 
 /** Composante Modal de Timtools */
 export default class Modal {
@@ -83,9 +84,8 @@ export default class Modal {
    */
   updateContent() {
     //Selectionne le bon element pour remplace le HTML et le remplace
-    if (this.modalId == 'tpl-modal-videos') {
-      this.videoId = this.element.dataset.videoId;
-      console.log(this.videoId);
+    if (this.modalId == 'tpl-modal-video') {
+      new Video(this.modalElement.querySelector('.js-video'));
     }
   }
 }
