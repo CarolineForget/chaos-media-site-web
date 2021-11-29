@@ -2,16 +2,19 @@
 .equipe-hero {
     text-align: center;
     padding: 0 50px;
+   
+
     h1 {
         // color: var(--color-tiersary);
         background: -webkit-linear-gradient(#00bbf2, #02b8f0, #09b0ea, #16a2df);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        transform: scaleY(1.35);
     }
 }
 
 .equipe-titre {
-    font-size: 1.75rem;
+    font-size: 3.5rem;  
 }
 
 .equipe-hero-personnage {
