@@ -5,8 +5,7 @@
    
 
     h1 {
-        // color: var(--color-tiersary);
-        background: -webkit-linear-gradient(#00bbf2, #02b8f0, #09b0ea, #16a2df);
+        background: -webkit-linear-gradient(#00A3FF, #005EB6);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         transform: scaleY(1.35);
@@ -210,6 +209,7 @@
     margin-top: 50px;
     text-align: center;
     font-size: 1rem;
+    font-weight: 600 ;
 }
 
 @media screen and (min-width: $breakpoint-md) {

@@ -16,7 +16,7 @@
 
         img {
             margin-top: 50px;
-            height: 20%;
+            transform: scale(0.8);
         }
 
         @media screen and (min-width: $breakpoint-sm) {
